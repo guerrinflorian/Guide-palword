@@ -1,0 +1,32 @@
+import {
+  Rocket,
+  TrendingUp,
+  Target,
+  Fish,
+  Egg,
+  Home,
+  Swords,
+  Wheat,
+  Wrench,
+  Wind,
+  Sparkles,
+  Pickaxe,
+  Globe,
+  type LucideIcon,
+} from "lucide-react";
+
+export const SECTION_ICONS: Record<string, LucideIcon> = {
+  rocket: Rocket,
+  "trending-up": TrendingUp,
+  target: Target,
+  fish: Fish,
+  egg: Egg,
+  home: Home,
+  swords: Swords,
+  wheat: Wheat,
+  wrench: Wrench,
+  wind: Wind,
+  sparkles: Sparkles,
+  pickaxe: Pickaxe,
+  globe: Globe,
+};

@@ -1,0 +1,192 @@
+import type { Section } from "../types";
+
+export const FARMING: Section = {
+  id: "farming",
+  title: "Farming avancé",
+  subtitle:
+    "Les trois farms qui débloquent le endgame : les schémas d'armes et d'armures légendaires, les âmes de Pal (pour la Statue du Pouvoir) et les points de technologie. Tout repose sur la reproduction de masse et le dépeçage.",
+  group: "Le reste",
+  icon: "pickaxe",
+  accent: "amber",
+  blocks: [
+    { kind: "sub", title: "Schémas légendaires : la méthode complète" },
+    {
+      kind: "p",
+      text: "Beaucoup de **boss de monde** lâchent un schéma d'arme ou d'armure **légendaire (rang 4)** quand vous les dépecez, mais uniquement leur **version alpha**. Ces schémas se craftent directement et sont bien meilleurs que les versions de l'arbre de techno. L'astuce, c'est de forcer des bébés alpha à la chaîne.",
+    },
+    {
+      kind: "callout",
+      tone: "warn",
+      label: "La règle clé",
+      text: "Le schéma légendaire n'est dans la table de butin QUE des bébés **alpha**. Un bébé non-alpha ne peut jamais le lâcher. Chaque bébé alpha a environ **3%** de chance de lâcher le schéma au dépeçage. Donc : beaucoup d'alphas = beaucoup de tentatives.",
+    },
+    {
+      kind: "steps",
+      items: [
+        "Mettez **Broncherry + Broncherry Aqua + Grintale** dans votre équipe, tous les trois **condensés 4 étoiles**, avec leurs **selles fabriquées** (sinon la compétence de partenaire ne s'active pas, la selle doit être dans l'onglet objets spéciaux).",
+        "Broncherry (45%) et Broncherry Aqua (55%) rendent alpha les oeufs ramassés : ensemble, c'est **quasi 100%** d'oeufs alpha. Grintale ajoute environ 75% de chance d'un oeuf en double (ou utilisez un gâteau aux légumes à la place, même effet).",
+        "Capturez un **couple (mâle + femelle)** du boss ciblé, reproduisez-les dans une **ferme d'élevage classique**.",
+        "**Ramassez les oeufs à la main.** C'est le ramassage qui déclenche la conversion en alpha. L'écloserie antique ne marche PAS pour ça (les compétences de partenaire ne s'activent qu'au ramassage manuel). Vous pouvez ensuite déposer les oeufs dans un incubateur pour les éclore.",
+        "Faites éclore et **dépecez en masse** les bébés alpha. 3% de schéma légendaire à chaque fois.",
+      ],
+    },
+    {
+      kind: "callout",
+      tone: "tip",
+      label: "Astuce condensation express",
+      text: "Pour monter Broncherry et Grintale à 4 étoiles vite : mettez le taux d'apparition des Pals au max dans les réglages du monde (chaque Pal spawn environ 3 fois), allez dans leur zone avec l'Anneau de Pitié et spammez les sphères. Puis breedez un couple et condensez les doublons dedans. Les **fruits étoilés** accélèrent encore.",
+    },
+    { kind: "h4", title: "Quel boss donne quel schéma (version alpha, rang 4)" },
+    {
+      kind: "table",
+      head: ["Boss alpha", "Schéma légendaire", "Type"],
+      rows: [
+        ["{{Frostallion Noct}}", "**Fusil à surchauffe** (souvent cité comme la meilleure arme du jeu)", "Arme"],
+        ["{{Neptilius}}", "**Fusil à charge** (tape autour de 100 000 dégâts)", "Arme"],
+        ["{{Frostallion}}", "Canon à plasma", "Arme"],
+        ["{{Jetragon}}", "Lance-roquettes", "Arme"],
+        ["{{Blazamut}}", "Fusil d'assaut", "Arme"],
+        ["{{Blazehowl}}", "Mousquet", "Arme"],
+        ["{{Azurobe}}", "Fusil semi-automatique", "Arme"],
+        ["{{Verdash}}", "Fusil à un coup", "Arme"],
+        ["{{Warsect}}", "Gatling laser", "Arme"],
+        ["{{Lyleen Noct}}", "Fusil laser", "Arme"],
+        ["{{Suzaku}}", "Fusil à pompe", "Arme"],
+        ["{{Elizabee}}", "Fusil à double canon", "Arme"],
+        ["{{Beacon}}", "Pistolet-mitrailleur (SMG)", "Arme"],
+        ["{{Fenglope}}", "Pistolet de fortune", "Arme"],
+        ["{{Paladius}}", "Armure Hexolite légère", "Armure"],
+        ["{{Necromus}}", "Casque Hexolite", "Armure"],
+        ["{{Astegon}}", "Armure métal raffiné (résistance chaleur)", "Armure"],
+        ["{{Menasting}}", "Armure métal (résistance froid)", "Armure"],
+        ["{{King Paca}}", "Armure de métal", "Armure"],
+        ["{{Bushi}}", "Casque de métal", "Armure"],
+        ["{{Penking}}", "Bandeau à plumes", "Armure"],
+        ["{{Chillet}}", "Tenue en tissu", "Tenue"],
+      ],
+    },
+    { kind: "sub", title: "Meilleurs Pals à dépecer (matériaux)" },
+    {
+      kind: "p",
+      text: "Reproduisez-les en masse (les passifs n'ont **aucune importance** ici) et dépecez. Astuce : collez le passif **Grand Prince** (+100% de drops) sur ces Pals pour **doubler** les matériaux à chaque dépeçage.",
+    },
+    {
+      kind: "table",
+      head: ["Pal", "Ce qu'il lâche", "Où le trouver"],
+      rows: [
+        ["{{Anubis}}", "**Âme de grand Pal (100%)**, os, manuel de technique innovante (points de tech)", "Boss de monde (île du désert)"],
+        ["{{Dandylord}}", "**Âme de Pal géante**, glande de venin, coeur de civilisation ancienne", "Boss de l'Arbre-Monde"],
+        ["{{Silvegis}}", "**Âme de Pal géante**, coeur de civilisation ancienne", "Boss de l'Arbre-Monde"],
+        ["{{Jetragon}}", "Coeurs thermiques, soralite, diamants (à revendre)", "Boss de l'île flottante"],
+        ["{{Mammorest}}", "Manuels de formation (XP), beaucoup d'or", "Zone de l'Arbre-Monde"],
+        ["{{Bushi Noct}}", "Organes de feu, lingots, âme de Pal moyen", "Fable Island (facile, en masse)"],
+        ["{{Smokey Cryst}}", "Organes de glace, âme de Pal moyen", "Facile à obtenir"],
+        ["{{Suzaku}}", "Âme de Pal moyen, pétrole brut, os", "Via reproduction"],
+        ["{{Wistella}}", "Âme de petit Pal, eau bénite de l'Arbre-Monde, sable de nuit", "Zone de l'Arbre-Monde"],
+        ["{{Relaxaurus Lux}}", "Organes électriques, huile de Pal de haute qualité", "Spawn en groupes"],
+        ["{{Woolipop Terra}}", "Laine, barbe à papa caramel (pour cakes et plats endgame)", "En masse sur son île"],
+      ],
+    },
+    {
+      kind: "callout",
+      tone: "combo",
+      label: "Âmes géantes",
+      text: "Les **âmes de Pal géantes** ne s'obtenaient avant qu'en combinant 2 âmes de grand Pal au concasseur. Désormais elles tombent directement en dépeçant Dandylord ou Silvegis. Gros gain de temps pour booster vos Pals à fond.",
+    },
+    { kind: "sub", title: "Farmer les âmes de Pal (Statue du Pouvoir)" },
+    {
+      kind: "p",
+      text: "Les âmes servent à booster PV, attaque, défense et vitesse de travail à la Statue du Pouvoir. Il en existe cinq tailles : petite, moyenne, grande, géante et **ultra** (la plus rare, nécessaire pour pousser un Pal jusqu'à +60).",
+    },
+    {
+      kind: "cards",
+      cols: 2,
+      items: [
+        {
+          accent: "amber",
+          title: "Le meilleur farm : dépecer des Anubis",
+          pal: "Anubis",
+          body: "Dépecer un Anubis donne **100% du temps une âme de grand Pal** (plus des os). Montez un ranch qui produit des Anubis en boucle, les passifs n'ont aucune importance. Recette rapide : **Caprity + Grizzbolt = Anubis**, deux Pals dispo dès le niveau 19. Enchaînez, stockez, dépecez.",
+        },
+        {
+          accent: "amber",
+          title: "Convertir les âmes (concasseur ou broyeur à glace)",
+          body: "Vos âmes de grand Pal se transforment en n'importe quelle autre : **2 grandes = 1 ultra**, **1 grande = 2 moyennes**, et 1 moyenne = 2 petites (donc 1 grande = 4 petites). Vous farmez donc des Anubis, puis vous fabriquez l'âme dont vous avez besoin.",
+        },
+      ],
+    },
+    {
+      kind: "callout",
+      tone: "tip",
+      label: "Autres sources d'âmes",
+      text: "Les **coffres du monde** (le désert nord-est en est bourré), les **coffres de donjon**, et surtout les **expéditions** : l'expédition du laboratoire génétique (battre Victor + Shadowbeak en difficile) donne **toutes les âmes du jeu**, et la Crypte du paradis rapporte des **âmes ultra**.",
+    },
+    { kind: "sub", title: "Farmer les points de technologie (livres de technique)" },
+    {
+      kind: "p",
+      text: "Les livres de technique se consomment pour débloquer l'arbre de techno. Il y a trois raretés, plus les livres antiques pour les technologies antiques.",
+    },
+    {
+      kind: "table",
+      head: ["Livre", "Donne", "Où farmer"],
+      rows: [
+        [
+          "Technique supérieur",
+          "1 point de tech",
+          "Donjons du Plateau originel (20%), plateforme pétrolière niv. 30 coffres violets (3%), capture/kill Faleris ou Vixy Ignis (1%)",
+        ],
+        [
+          "Technique innovante",
+          "2 points de tech",
+          "Donjons endgame (volcan, désert NE) 33% par coffre, capture/kill Shadowbeak / Lyleen Noct (10%) ou Anubis (5%)",
+        ],
+        [
+          "Technique du futur",
+          "3 points de tech",
+          "Donjons les plus endgame (montagne de Frostallion, Sakurajima, Faybreak) 33%",
+        ],
+        ["Technique antique", "1 point de tech antique", "Coffres violets des plateformes pétrolières"],
+      ],
+    },
+    {
+      kind: "callout",
+      tone: "combo",
+      label: "Le raccourci expéditions",
+      text: "L'**expédition de Sakurajima** (battre le boss de tour Céline en difficile) ramène des livres supérieurs ET antiques, plus des manuels de formation (XP), de l'or et des pièces canines. Lancez vos expéditions en tâche de fond, elles tournent toutes seules pendant que vous jouez.",
+    },
+    { kind: "sub", title: "Nouveautés endgame à connaître" },
+    {
+      kind: "cards",
+      cols: 2,
+      items: [
+        {
+          accent: "violet",
+          title: "Les deux nouvelles grandes zones",
+          body: "**Sun Reach Isles** (à l'est de Faybreak) et l'**Arbre-Monde** (sa propre carte, mécaniques uniques). Pour y accéder, finissez la nouvelle quête principale : après 7 tours de syndicat sur 8, Zoé donne la 8e et dernière tour qui mène aux Sun Reach Isles. Un téléporteur rapide en haut de la tour de Faybreak vous y emmène direct. Terminer l'histoire donne la **Baleine géante** (le Pal des vieux trailers), surpuissante en combat ET **seul moyen d'accéder à l'Arbre-Monde**.",
+        },
+        {
+          accent: "violet",
+          title: "Tours de guet et tours de piratage",
+          body: "Chaque région a une **tour de guet** : elle dévoile la carte (comme dans Assassin's Creed), révèle des points d'intérêt et donne des **points de technologie**. Les **tours de piratage** (mini-jeu rapide) donnent beaucoup d'XP et surtout des **schémas d'objets**, notamment des accessoires **violets** très forts (jusqu'à 2 buffs, genre résistance feu + glace + PV ou dégâts).",
+        },
+        {
+          accent: "violet",
+          title: "L'éveil (ascension) des Pals",
+          glow: true,
+          body: "Le \"Super Saiyan\" de Palworld : un boost permanent avec aura jaune et environ **+111 stats**. Il faut des **gemmes radieuses** (obtenues en battant des ennemis du bon élément, ex : gemme ténèbres = battre des ennemis ténèbres) et de l'**eau bénite de l'Arbre-Monde**. Craftez la gemme à l'établi antique. Une seule suffit, et c'est **une fois par Pal**.",
+        },
+        {
+          accent: "violet",
+          title: "Fruits étoilés et expédition Arbre-Monde",
+          body: "Les **fruits étoilés** montent une étoile instantanément (sautent le grind de doublons) : ils tombent des boss difficiles de l'Arbre-Monde, des expéditions, et de certains marchands d'église. Et l'**expédition Arbre-Monde en difficulté normale** (pas la plus dure) est le meilleur farm passif : sphères antiques à gogo, âmes géantes, gemmes radieuses et pal oxide.",
+        },
+      ],
+    },
+    {
+      kind: "callout",
+      tone: "tip",
+      label: "Autres nouveautés utiles",
+      text: "Les **sanctuaires** refaits contiennent des **os antiques** (uniquement là, pour des recettes de haut niveau). Les **arbres ont des raretés** : les versions hautes donnent du bois dur, les endgame du bois antique. Et environ 7 nouvelles petites îles autour de la carte, avec coffres et boss à découvrir.",
+    },
+  ],
+};

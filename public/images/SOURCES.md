@@ -1,0 +1,118 @@
+# Sources des images
+
+Images de jeu telechargees en local pour un guide prive, usage personnel uniquement.
+Aucun hotlink : tout est servi depuis public/images/.
+
+Sources utilisees par le script scripts/fetch-images.mjs :
+
+- Depots communautaires GitHub (raw.githubusercontent.com) : mlg404/palworld-paldex-api, Palworld-Data/palworld-assets
+- palworld.wiki.gg et palworld.fandom.com (MediaWiki, Special:FilePath)
+- paldb.cc (icones de Pals)
+- en.wikipedia.org (logo)
+
+## Provenance fichier par fichier
+
+- brand/palworld-logo.png : https://palworld.wiki.gg/images/Site-logo.png?7de1f6
+- locations/desert.png : https://palworld.wiki.gg/images/Twilight_Dunes.png?adf70a
+- locations/montagnes-enneigees.png : https://palworld.wiki.gg/images/Astral_Mountains.png?92e073
+- locations/windswept-hills.png : https://palworld.wiki.gg/images/Windswept_Hills.png?e70b9e
+- pals/anubis.png : https://palworld.wiki.gg/images/Anubis.png?6e4678
+- pals/astegon.png : https://palworld.wiki.gg/images/Astegon.png?3d2dc9
+- pals/azark.png : https://palworld.wiki.gg/images/Astegon.png?3d2dc9
+- pals/azurobe.png : https://palworld.wiki.gg/images/Azurobe.png?27c501
+- pals/beacon.png : https://palworld.wiki.gg/images/Beakon.png?9e268c
+- pals/beegarde.png : https://palworld.wiki.gg/images/Beegarde.png?cc13bd
+- pals/bellanoir.png : https://palworld.wiki.gg/images/Bellanoir.png?74661e
+- pals/blazamut-ryu.png : https://palworld.wiki.gg/images/Blazamut_Ryu.png?19e41e
+- pals/blazamut.png : https://palworld.wiki.gg/images/Blazamut.png?7c34d8
+- pals/blazehowl.png : https://palworld.wiki.gg/images/Blazehowl.png?35e260
+- pals/broncherry-aqua.png : https://palworld.wiki.gg/images/Broncherry_Aqua.png?495fc9
+- pals/broncherry.png : https://palworld.wiki.gg/images/Broncherry.png?580be8
+- pals/bushi-noct.png : https://palworld.wiki.gg/images/Bushi_Noct.png?cd4a8c
+- pals/bushi.png : https://palworld.wiki.gg/images/Bushi.png?eddbd6
+- pals/caprity-noct.png : https://palworld.wiki.gg/images/Caprity_Noct_icon.png?36cb8a
+- pals/caprity.png : https://palworld.wiki.gg/images/Caprity.png?415319
+- pals/cattiva.png : https://palworld.wiki.gg/images/Cattiva_icon.png?31e506
+- pals/celaray.png : https://palworld.wiki.gg/images/Celaray.png?caef0a
+- pals/chikipi.png : https://palworld.wiki.gg/images/Chikipi.png?c8a139
+- pals/chillet.png : https://palworld.wiki.gg/images/Chillet.png?1a717c
+- pals/cinnamoth.png : https://palworld.wiki.gg/images/Cinnamoth.png?8271c3
+- pals/cremis.png : https://palworld.wiki.gg/images/Cremis.png?1444d9
+- pals/depresso.png : https://palworld.wiki.gg/images/Depresso_icon.png?6ec113
+- pals/direhowl.png : https://palworld.wiki.gg/images/Direhowl.png?f87281
+- pals/dumud.png : https://palworld.wiki.gg/images/Dumud.png?f65c4a
+- pals/elizabee.png : https://palworld.wiki.gg/images/Elizabee_icon.png?833948
+- pals/faleris-aqua.png : https://palworld.wiki.gg/images/Faleris_Aqua_icon.png?6990b8
+- pals/faleris.png : https://palworld.wiki.gg/images/Faleris.png?f0e8e4
+- pals/fenglope.png : https://palworld.wiki.gg/images/Fenglope.png?35488d
+- pals/flambelle.png : https://palworld.wiki.gg/images/Flambelle.png?bfe6ed
+- pals/flopie.png : https://palworld.wiki.gg/images/Flopie.png?3b8319
+- pals/foxparks.png : https://palworld.wiki.gg/images/Foxparks.png?18b8e6
+- pals/frostallion-noct.png : https://palworld.wiki.gg/images/Frostallion_Noct_icon.png?ece5cc
+- pals/frostallion.png : https://palworld.wiki.gg/images/Frostallion.png?bdff29
+- pals/galeclaw.png : https://palworld.wiki.gg/images/Galeclaw.png?7dc1c5
+- pals/gobfin.png : https://palworld.wiki.gg/images/Gobfin.png?8a97f5
+- pals/grintale.png : https://palworld.wiki.gg/images/Grintale.png?fbdf1a
+- pals/grizzbolt.png : https://palworld.wiki.gg/images/Grizzbolt_icon.png?119902
+- pals/gumoss.png : https://palworld.wiki.gg/images/Gumoss.png?d3d4bf
+- pals/incineram.png : https://palworld.wiki.gg/images/Incineram.png?e9f57d
+- pals/jetragon.png : https://palworld.wiki.gg/images/Jetragon.png?4a1f7e
+- pals/jormuntide-ignis.png : https://palworld.wiki.gg/images/Jormuntide_Ignis.png?c8baa6
+- pals/jormuntide.png : https://palworld.wiki.gg/images/Jormuntide_icon.png?dcf6a8
+- pals/katress-ignis.png : https://palworld.wiki.gg/images/Katress_Ignis.png?dc03df
+- pals/kelpsea-ignis.png : https://palworld.wiki.gg/images/Kelpsea_Ignis.png?e25e11
+- pals/kelpsea.png : https://palworld.wiki.gg/images/Kelpsea.png?880a2a
+- pals/king-paca.png : https://palworld.wiki.gg/images/Kingpaca.png?76c4fd
+- pals/lamball.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SheepBall_icon_normal.webp
+- pals/lovander.png : https://palworld.wiki.gg/images/Lovander.png?368b77
+- pals/lyleen-noct.png : https://palworld.wiki.gg/images/Lyleen_Noct_icon.png?6637ea
+- pals/lyleen.png : https://palworld.wiki.gg/images/Lyleen.png?ed95ab
+- pals/mammorest.png : https://palworld.wiki.gg/images/Mammorest.png?d26eff
+- pals/mau-cryst.png : https://palworld.wiki.gg/images/Mau_Cryst.png?e7ac56
+- pals/mau.png : https://palworld.wiki.gg/images/Mau_icon.png?da0048
+- pals/melpaca.png : https://palworld.wiki.gg/images/Melpaca.png?d1baa8
+- pals/menasting.png : https://palworld.wiki.gg/images/Menasting.png?361afc
+- pals/mozzarina.png : https://palworld.wiki.gg/images/Mozzarina.png?a937d5
+- pals/necromus.png : https://palworld.wiki.gg/images/Necromus.png?cb10e2
+- pals/neptilius.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PoseidonOrca_icon_normal.webp
+- pals/nitewing.png : https://palworld.wiki.gg/images/Nitewing.png?c77f3e
+- pals/orserk.png : https://palworld.wiki.gg/images/Orserk.png?9b916f
+- pals/paladius.png : https://palworld.wiki.gg/images/Paladius_icon.png?7c2d9f
+- pals/penking-lux.png : https://palworld.wiki.gg/images/Penking_Lux_icon.png?3be99f
+- pals/penking.png : https://palworld.wiki.gg/images/Penking.png?ff52aa
+- pals/petallia.png : https://palworld.wiki.gg/images/Petallia_icon.png?494215
+- pals/quivern.png : https://palworld.wiki.gg/images/Quivern.png?d50a1c
+- pals/relaxaurus-lux.png : https://palworld.wiki.gg/images/Relaxaurus_Lux.png?3b92be
+- pals/relaxaurus.png : https://palworld.wiki.gg/images/Relaxaurus.png?411426
+- pals/renjishi.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KabukiMan_icon_normal.webp
+- pals/rooby.png : https://palworld.wiki.gg/images/Rooby.png?5b7a70
+- pals/rushoar.png : https://palworld.wiki.gg/images/Rushoar_icon.png?37a4dd
+- pals/sekhmet.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Sekhmet_icon_normal.webp
+- pals/serpent.png : https://palworld.wiki.gg/images/Surfent_icon.png?5003a5
+- pals/shadowbeak.png : https://palworld.wiki.gg/images/Shadowbeak_icon.png?9e168c
+- pals/shroomer.png : https://palworld.wiki.gg/images/Shroomer_icon.png?e616ce
+- pals/sibelyx-primo.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteMoth_Neutral_icon_normal.webp
+- pals/sibelyx.png : https://palworld.wiki.gg/images/Sibelyx.png?cea411
+- pals/silvegis.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteShieldDragon_icon_normal.webp
+- pals/smokey-cryst.png : https://palworld.wiki.gg/images/Smokie_icon.png?713372
+- pals/sparkit.png : https://palworld.wiki.gg/images/Sparkit.png?408f58
+- pals/splatterina.png : https://palworld.wiki.gg/images/Splatterina_icon.png?727d0d
+- pals/surfent-terra.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Serpent_Ground_icon_normal.webp
+- pals/surfent.png : https://palworld.wiki.gg/images/Surfent.png?f1ca8f
+- pals/suzaku-aqua.png : https://palworld.wiki.gg/images/Suzaku_Aqua_icon.png?2a5248
+- pals/suzaku.png : https://palworld.wiki.gg/images/Suzaku.png?99c84e
+- pals/sweepa.png : https://palworld.wiki.gg/images/Sweepa.png?80e957
+- pals/tombat.png : https://palworld.wiki.gg/images/Tombat.png?316209
+- pals/tuckle.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TentacleTurtle_icon_normal.webp
+- pals/vaelet.png : https://palworld.wiki.gg/images/Vaelet.png?179ca5
+- pals/venusa.png : https://palworld.wiki.gg/images/Venusa_icon.png?f769e4
+- pals/verdash.png : https://palworld.wiki.gg/images/Verdash.png?86eed5
+- pals/vixy.png : https://palworld.wiki.gg/images/Vixy.png?1f4a67
+- pals/warsect.png : https://palworld.wiki.gg/images/Warsect.png?7291d4
+- pals/wistella.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MoonChild_icon_normal.webp
+- pals/woolipop-terra.webp : https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SweetsSheep_Ground_icon_normal.webp
+- pals/woolipop.png : https://palworld.wiki.gg/images/Woolipop.png?38f737
+- pals/wumpo.png : https://palworld.wiki.gg/images/Wumpo.png?c90bff
+- pals/yakumo.png : https://palworld.wiki.gg/images/Yakumo.png?27ec6d
+
+Les fichiers presents sur disque mais absents de cette liste ont ete deposes manuellement.
