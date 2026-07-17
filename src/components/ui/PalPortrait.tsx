@@ -1,6 +1,7 @@
 import Image from "next/image";
 import manifest from "@/content/image-manifest.json";
 import { slugify, cn } from "@/lib/utils";
+import { PalHover } from "@/components/ui/PalHover";
 import type { Accent } from "@/content/types";
 
 const pals: Record<string, string> = manifest.pals;
@@ -64,14 +65,18 @@ export function PalPortrait({
     );
   }
 
+  const src = `/images/pals/${file}`;
+
   return (
-    <Image
-      src={`/images/pals/${file}`}
-      alt={name}
-      width={size}
-      height={size}
-      className={cn("shrink-0 rounded-xl border border-line bg-surface2 object-cover", className)}
-      style={{ width: size, height: size }}
-    />
+    <PalHover src={src} label={name} className={cn("inline-block shrink-0", className)}>
+      <Image
+        src={src}
+        alt={name}
+        width={size}
+        height={size}
+        className="rounded-xl border border-line bg-surface2 object-cover"
+        style={{ width: size, height: size }}
+      />
+    </PalHover>
   );
 }

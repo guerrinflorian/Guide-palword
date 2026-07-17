@@ -1,5 +1,6 @@
 import Image from "next/image";
 import manifest from "@/content/image-manifest.json";
+import { PalHover } from "@/components/ui/PalHover";
 
 const locations: Record<string, string> = manifest.locations;
 
@@ -27,18 +28,27 @@ export function LocationStrip({ slugs }: { slugs: string[] }) {
   return (
     <div className="my-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
       {available.map((slug) => (
-        <figure key={slug} className="group relative overflow-hidden rounded-xl border border-line bg-surface">
-          <Image
-            src={`/images/locations/${locations[slug]}`}
-            alt={LABELS[slug] ?? slug}
-            width={480}
-            height={280}
-            className="h-28 w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.04] sm:h-32"
-          />
-          <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/95 to-transparent px-2.5 pb-1.5 pt-6 font-mono text-[11px] text-ink">
-            {LABELS[slug] ?? slug}
-          </figcaption>
-        </figure>
+        <PalHover
+          key={slug}
+          src={`/images/locations/${locations[slug]}`}
+          label={LABELS[slug] ?? slug}
+          width={380}
+          height={240}
+          className="block"
+        >
+          <figure className="group relative overflow-hidden rounded-xl border border-line bg-surface">
+            <Image
+              src={`/images/locations/${locations[slug]}`}
+              alt={LABELS[slug] ?? slug}
+              width={480}
+              height={280}
+              className="h-28 w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.04] sm:h-32"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/95 to-transparent px-2.5 pb-1.5 pt-6 font-mono text-[11px] text-ink">
+              {LABELS[slug] ?? slug}
+            </figcaption>
+          </figure>
+        </PalHover>
       ))}
     </div>
   );
