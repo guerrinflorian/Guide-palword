@@ -1,6 +1,7 @@
 import Image from "next/image";
 import manifest from "@/content/image-manifest.json";
 import { slugify } from "@/lib/utils";
+import { getPaldbUrl } from "@/lib/paldb";
 import { PalHover } from "@/components/ui/PalHover";
 
 const pals: Record<string, string> = manifest.pals;
@@ -20,7 +21,7 @@ export function PalName({ name }: { name: string }) {
   const src = `/images/pals/${file}`;
 
   return (
-    <PalHover src={src} label={name} className="font-semibold text-ink">
+    <PalHover src={src} label={name} href={getPaldbUrl(name)} className="font-semibold text-ink">
       <Image
         src={src}
         alt=""

@@ -2,6 +2,7 @@ import Image from "next/image";
 import manifest from "@/content/image-manifest.json";
 import { slugify, cn } from "@/lib/utils";
 import { PalHover } from "@/components/ui/PalHover";
+import { getPaldbUrl } from "@/lib/paldb";
 import type { Accent } from "@/content/types";
 
 const pals: Record<string, string> = manifest.pals;
@@ -68,7 +69,7 @@ export function PalPortrait({
   const src = `/images/pals/${file}`;
 
   return (
-    <PalHover src={src} label={name} className={cn("inline-block shrink-0", className)}>
+    <PalHover src={src} label={name} href={getPaldbUrl(name)} className={cn("inline-block shrink-0", className)}>
       <Image
         src={src}
         alt={name}

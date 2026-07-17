@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Search, Menu, X, Users } from "lucide-react";
+import { Search, Menu, X, Users, PawPrint } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
 import { OPEN_PALETTE_EVENT } from "@/components/search/CommandPalette";
+import { OPEN_PALDEX_EVENT } from "@/components/paldex/PaldexModal";
 import { useActiveSection } from "@/lib/useActiveSection";
 import { cn } from "@/lib/utils";
 import type { NavItem } from "./nav-items";
@@ -30,6 +31,16 @@ export function Header({ items, coopTag }: { items: NavItem[]; coopTag: string }
             <Users size={12} className="text-teal" aria-hidden />
             {coopTag}
           </span>
+
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new CustomEvent(OPEN_PALDEX_EVENT))}
+            aria-label="Ouvrir le Paldex"
+            className="flex items-center gap-2 rounded-xl border border-line bg-surface px-3 py-2 text-[13px] text-muted transition-colors hover:border-teal-line hover:text-ink"
+          >
+            <PawPrint size={14} aria-hidden />
+            <span className="hidden md:inline">Paldex</span>
+          </button>
 
           <button
             type="button"

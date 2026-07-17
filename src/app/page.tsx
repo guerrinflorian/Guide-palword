@@ -8,6 +8,8 @@ import { Hero } from "@/components/layout/Hero";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { CommandPalette } from "@/components/search/CommandPalette";
+import { PaldexModal } from "@/components/paldex/PaldexModal";
+import { buildPaldex } from "@/lib/paldex";
 import { Section } from "@/components/ui/Section";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import type { NavItem } from "@/components/layout/nav-items";
@@ -26,6 +28,7 @@ export default function Home() {
       <TopoPattern />
       <Header items={navItems} coopTag={COOP_TAG} />
       <CommandPalette entries={searchEntries} />
+      <PaldexModal entries={buildPaldex()} />
 
       <div className="mx-auto max-w-[1220px] px-5 lg:grid lg:grid-cols-[236px_minmax(0,1fr)] lg:gap-9">
         <Sidebar items={navItems} />
